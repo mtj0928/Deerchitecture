@@ -16,9 +16,11 @@ public class Coordinator {
         builders[TypeScene.id]?.resolve(scene: scene) ?? AnyView(EmptyView())
     }
 
+    #if os(iOS) || os(macOS)
     public func resolveasViewController<TypeScene: Scene>(_ scene: TypeScene) -> ViewController {
         HostingController(rootView: self.resolve(scene))
     }
+    #endif
 }
 
 fileprivate struct AnyBuilder {
