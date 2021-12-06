@@ -1,5 +1,6 @@
 import SwiftUI
 
+#if os(watchOS)
 public struct ResolovedView<TypedScene: Scene>: View {
 
     let scene: TypedScene
@@ -14,3 +15,4 @@ public struct ResolovedView<TypedScene: Scene>: View {
         environment.coordinator.resolve(scene)
     }
 }
+#endif
