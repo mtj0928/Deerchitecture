@@ -1,3 +1,3 @@
 public protocol ApplicationEnvironment {
-    var coordinator: Coordinator { get }
+    var viewCatalog: ViewCatalog { get }
 }

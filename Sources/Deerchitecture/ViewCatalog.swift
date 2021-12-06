@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 #endif
 
-public class Coordinator {
+public class ViewCatalog {
 
     #if os(macOS) || os(iOS)
     public typealias ViewAlias = ViewController

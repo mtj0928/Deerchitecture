@@ -12,7 +12,7 @@ public struct ResolovedView<TypedScene: Scene>: View {
     }
 
     public var body: some View {
-        environment.coordinator.resolve(scene)
+        environment.viewCatalog.resolve(scene)
     }
 }
 #endif
